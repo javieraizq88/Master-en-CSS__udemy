@@ -9,49 +9,62 @@
 </head>
 
 <body>
-    <h1 id="descripcion">Master en CSS</h1>
+    <h1 id="titulo">Master en CSS</h1>
     <h2>Descripcion del curso</h2>
-    <ul>
+    <ul id="menu">
         <li>
-            <a href="#">
-                Inicio
-            </a>
+            <a href="#">Inicio</a>
         </li>
         <li>
-            <a href="#">
-                Temario
-            </a>
+            <a href="#">Temario</a>
+            <ul>
+                <li><a href="#">HTML</a> </li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">LESS</a></li>
+            </ul>
         </li>
         <li>
-            <a href="#">
-                Reseña
-            </a>
+            <a href="#">Reseña</a>
         </li>
         <li>
-            <a href="#">
-                Contacto
-            </a>
+            <a href="#">Contacto</a>
         </li>
     </ul>
 
-    <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    <div id="descripcion">
+        <p class="parrafo parrafo1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        <p class="parrafo parrafo3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum.</p>
     </div>
 
+
+    <div id="usuario">
+<form action="">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" /> 
+
+    <label for="apellidos">Apellidos</label>
+    <input type="text" name="apellidos" /> 
+
+<input type="submit" name="Submit" value="enviar" id="">
+</form>
+    </div>
+
+<div id="saludo">
+    <h1>Hola soy Javiera</h1>
+</div>
 
     <footer>
         Todos los derechos reservados &copy; Javiera Izquierdo
