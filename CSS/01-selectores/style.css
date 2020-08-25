@@ -87,3 +87,6 @@ input[type="submit"]{
 }
 
 /* Prioridad */
+h1{
+    background: purple !important;
+}
