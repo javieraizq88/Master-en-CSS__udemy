@@ -1,0 +1,33 @@
+body{
+    background-color: #ccc;
+    /* background-image: url(img/wallpaper1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed; /* Deja la imagen del fondo fija*/
+    /* background-position: left bottom; /*mueve la imagen*/
+    color: black;
+}
+
+#caja{
+    border: 5px solid black;
+    padding: 10px;
+    background-color: rgb(77, 96, 204);
+    color: white;
+    font-family: "Open Sans";
+    text-align: center;
+    line-height: 50px; /* separacion entre lineas */
+    text-transform: uppercase; /* mayusculas o minusculas*/
+    text-decoration: underline;
+    vertical-align: top;
+    text-indent: 15px; /* identacion entre cada parrafo */
+    word-spacing: 10px; /* espacio entre  palabra*/
+    letter-spacing: 2px; /* espacop entre letras */
+}
+
+h2{
+    color: red;
+    background: white;
+    border: 5px solid red;
+    background-image: url(img/patron1.jpg);
+
+}

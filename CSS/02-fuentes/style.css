@@ -1,13 +1,39 @@
 
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
+/* 
+##### FUENTES PERSONALIZADAS #####
+
+- Descargo fuente de google font. 
+- guardarla en la carpeta del proyecto
+- crear el @font-face con un nombre del nuevo estilo descargado
+- porner un src con la ubicación del archivo seleccionando el tipo de letra
+- llamarlo desde donde quiero como cualquier otra fuente
+*/
+
+@font-face{
+    font-family: OpenSansFuenteCustom;
+    src:url(font/OpenSans-Regular.ttf);
 }
 
+h1{
+    font-family: 'Mansalva', cursive;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: mediumpurple;
+}
+ 
+/* Colores */
+/* colores del sistema */
+/* colores hexadecimales */
+/* colores RGB */
+ /*colores RGBA */
+
+
 h3{
-    font-family: "Comic Sans MS";
+    font-family: "OpenSansFuenteCustom, Comic Sans MS";
     font-size: 25px;
     font-weight: lighter;
+    color: olive;
 }
 
 p{
