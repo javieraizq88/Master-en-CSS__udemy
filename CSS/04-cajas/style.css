@@ -4,7 +4,13 @@
 }
 
 body{
-    padding: 40px;
+    padding: 40px; /* p/ra separar los elementos */
+}
+
+#cajas {
+    /* pone 3 cajas en 1 linea */
+    max-width: 1035px;
+    border: 1px solid black;
 }
 
 .caja{
@@ -32,5 +38,5 @@ body{
 
 .clearfix{
     float: none;
-    clear: both;
+    clear: both; 
 }
