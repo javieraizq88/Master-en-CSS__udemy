@@ -1,0 +1,47 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li{
+    font-size: 2rem;
+}
+ul li:first-child{
+    color: purple;
+    font-weight: bold;
+}
+/* selecciona los elementos de la lista  */
+ul li:nth-child(2){
+    color: orange;
+    font-weight: bold;
+}
+ul li:last-child{
+    color: gray;
+    font-weight: bold;
+}
+.mi-enlace{
+    font-size: 3rem;
+    color: indianred;
+}
+/* antes de seleccionar el enlace */
+.mi-enlace:link{
+    color: red;
+}
+/* al pinchar el enlace */
+.mi-enlace:visited{
+    color: saddlebrown;
+}
+/* pasar por encima del link */
+.mi-enlace:hover{
+    color: blue;
+}
+/* durante el click da estilos */
+.mi-enlace:active{
+    color: green;
+    font-family: cursive;
+}
+input[type="text"]{
+    margin-top: 2rem;
+    padding: 1rem;
+}
+input[type="text"]:focus{
+   border: 4px dashed red;
+}

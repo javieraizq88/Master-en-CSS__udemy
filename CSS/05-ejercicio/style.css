@@ -1,0 +1,129 @@
+/* 
+Ejercicio completo con HTML y CSS
+1) crear un html y vincularlo con CSS
+2) crear una estructura html q cuente con
+    - un contenedor general, 
+    - una cabecera, 
+    - menu, 
+    - un side bar, 
+    - una seccion de contenido principal,
+    - elementos dentro del contenedor principal,
+    - un footer
+3) todo el contenido debe estar dentro del contenedor general y su ancho sera de 1200px y estar centrado
+4) el header debe ocupar el 100% del ancho y tener un texto grande centrado
+5) el menu debe tener los elementos uno al lado del otro
+6) el contenido principal debe tener un ancho deñ 70%
+7) el contenido dentro del contenedor principal debe ser una cuadricula con 4 lineas de 2 cajas
+8) el side bar debe tener un ancho del 30%
+9) footer debe tener un ancho del 100% del div q lo contiene y estar abajo de todo
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#general {
+    width: 1200px;
+    margin: 20px auto 0 auto;
+    border: 1px solid #ccc;
+}
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(30, 118, 236);
+    color: white;
+    text-align: center;
+    line-height: 90px;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+/* menu */
+#menu{
+    background-color: #ccc;
+}
+#menu ul li{
+    /* display: inline-block; */
+    display: block;
+    float: left;
+    border-right: 1px solid #eee;
+}
+#menu ul li a{
+    display: block;
+    color: #444;
+    padding: 1rem;
+}
+#menu ul li:hover{
+    background-color: rgb(20, 74, 145);
+    cursor: pointer;
+}
+#menu ul li:hover a { 
+    color: white;
+}
+
+/* contenido */
+#contenido{
+    float: left;
+    width: 69%;
+}
+
+/* sidebar  */
+#lateral {
+    float: left;
+    width: 30%;
+    border: 1px solid red;
+    min-height: 500px;
+    max-height: 650px;
+    text-align: center;
+}
+#contenido > h1 {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    color: #444;
+    text-shadow: 0px 0px 5px gray;
+    /* text-shadow: eje-x eje-y difuminacion color; */
+}
+#contenido .caja{
+    width: 40%;
+    height: 250px;
+    background-color: #ccc;
+    border: 1px solid gray;
+    color: white;
+    float: left;
+    margin: 1.5rem 1.5rem 1.5rem 2.5rem;
+    text-align: center;
+    line-height: 200px;
+    color: #444;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 15px grey;
+}
+.caja1{
+    border-radius: 50px;
+}
+.caja2{
+   border-radius: 50px 10px 4px 60px;
+}
+.caja3{
+    border-radius: 50%;
+}
+.sombra-interior1{
+    box-shadow: 5px 5px 10px gray inset !important;
+}
+.sombra-interior2{
+    box-shadow: 0px 0px 20px gray inset !important;
+}
+/* footer */
+footer{
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    background-color: #eee;
+    text-align: center;
+    color: #444;
+    border-top: 1px solid #ccc;
+}
