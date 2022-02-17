@@ -15,10 +15,23 @@
     margin: 0;
 }
 
-
 body{
     background-image: url("../img/paven.png");
 }
+
+a {
+    color: rgb(57, 88, 182);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rosybrown;
+}
+
+a:visited{
+    color: rosybrown;
+}
+
 /* formularios */
 input[type="text"],
 input[type="email"],
@@ -64,6 +77,7 @@ button:active{
     box-shadow: 0 0 14px blue inset;
     text-shadow: 0 0 10px #ccc;
 }
+
 /* header */
 .header{
     min-width: 1024px;
@@ -169,7 +183,6 @@ nav > ul > li:hover > ul > li:hover{
 }
 
 /* content */
-
 .content {
     width: 1250px;
     min-height: 1100px;
@@ -177,8 +190,9 @@ nav > ul > li:hover > ul > li:hover{
 }
 
 /* sidebar */
-
-aside{
+aside,
+#frase{
+    clear: both;
     width: 200px;
     float: left;
     margin: 30px;
@@ -187,6 +201,14 @@ aside{
     box-shadow: 0 2px 2px #ccc;
     font-family: sans-serif, Arial, Helvetica;
 }
+
+#frase{
+    width: 180px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
 aside .widget{
     display: block;
     width: 180px;
@@ -199,6 +221,7 @@ aside .widget{
 aside .widget:last-child{
     margin-bottom: 20px;
 }
+
 aside h3{
     display: block;
     width: 100%;
@@ -206,8 +229,38 @@ aside h3{
     text-align: center;
     padding-top: 2px;
     padding-bottom: 2px;
+    margin-bottom: 1rem;
     background-color: #f2f3f2;
     border: 1px solid #ccc;
     border-left: none;
     border-right: none;
 }
+
+#aside li {
+    margin: 0.5rem 1rem 5px auto;
+    list-style: square;
+}
+
+/* formulario barra lateral */
+#aside div label, 
+#aside div input [type="text"],
+#aside div input [type="email"],
+#aside div input [type="password"],
+#aside div a{
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#aside div input [type="button"],
+#aside div input [type="submit"],
+#aside div button{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#aside input,
+#aside label {
+    margin: 0 auto;
+    text-align: center;
+}
+
